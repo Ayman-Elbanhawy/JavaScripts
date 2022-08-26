@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href=
+"//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src=
+"//code.jquery.com/jquery-1.12.4.js">
+    </script>
+    <script src=
+"//code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
+  
+    <style>
+        h1 {
+            color: green;
+        }
+  
+        #div_element {
+            width: 150px;
+            height: 150px;
+            background: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Drag a widget on screen jQuery</h1>
+  
+    <h3>jQuery UI Draggable addClasses Option</h3>
+    <h2>https://www.geeksforgeeks.org/jquery-ui-draggable-axis-option/?ref=lbp</h2>
+  
+    <div id="div_element">Div content</div>
+  
+    <script>
+        $(function () {
+            $("#div_element").draggable({
+                addClasses: true
+            });
+        });
+    </script>
+</body>
+  
+</html>

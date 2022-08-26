@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>GET IP Using AJAX</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+        $.getJSON("https://ipinfo.io", function (data) {
+
+            $("#info").append("City: " + data.city + " <br>,County: " + data.country + " ,IP: " + data.ip + " <br>,,Location: " + data.loc + " <br>,,Organisation: " + data.org + " <br>,,Postal Code: " + data.postal + " <br>,,Region: " + data.timezone + "")
+
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <p>Client's information:</p>
+
+    <p id="info"></p>
+
+</body>
+
+</html>

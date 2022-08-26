@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="scripts/main.js"></script>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello Dear Visitor!</br> We are happy that you've chosen our website to learn programming languages. We're sure you'll become one of the best programmers in your country. Good luck to you!";
+      }
+      
+      function theFunction() {
+          alert("Hi there");
+      }
+      
+      
+    </script>
+    
+</head>
+
+
+<body>
+
+	<button type="button" onclick="theFunction()">Button - Show Alert</button>
+
+	<p>Click the button to see the current date.</p>
+    	<button onclick="getElementById('demo').innerHTML=Date()">What day is today?</button>
+	<p id="demo"></p>
+      
+    <button type="button" onclick="window.location.href='https://w3docs.com';">Click Here to go to website</button>
+  
+    <p>There is a hidden message for you. Click to see it.</p>
+    	<button type="button" onclick="myFunction()">Click me!</button>
+    <p id="demo"></p>
+   
+   
+
+</body>
+
+
+
+</html>

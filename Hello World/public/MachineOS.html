@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>
+        How to detect operating system on the
+        client machine using JavaScript ?
+    </title>
+</head> 
+  
+<body style="text-align:center;"> 
+  
+    <h1 style="color:green;">GeeksforGeeks</h1> 
+  
+    <button ondblclick="operatingSytem()"> 
+        Return Operating System Name on Double Click
+    </button> 
+    
+    <button onclick="operatingSytem1()"> 
+        Return Operating System Name on 1 Click 
+    </button> 
+  
+   <button onclick="version()"> 
+        Return OS Version 
+    </button> 
+    
+    <p id="OS"></p> 
+    <p id="OS1"></p> 
+    <p id="OSVERSION"></p>
+      
+    <!-- Script to display the OS name -->
+    <script> 
+        function operatingSytem() { 
+            var OSName="Unknown OS";
+            if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+            if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+            if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+            if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+              
+            // Display the OS name
+            document.getElementById("OS").innerHTML = OSName;
+        } 
+    </script> 
+    
+     <script> 
+        function operatingSytem1() { 
+            var OSName="Unknown OS";
+            if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+            if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+            if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+            if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+              
+            // Display the OS name
+            document.getElementById("OS1").innerHTML = OSName;
+        } 
+    </script> 
+  
+  <!-- Script to return OS details -->
+    <script> 
+        function version() { 
+            var os = navigator.appVersion; 
+              
+            // Display the OS details
+            document.getElementById("OSVERSION").innerHTML = os; 
+            alert(os);
+        } 
+    </script>  
+    
+</body> 
+  
+</html>

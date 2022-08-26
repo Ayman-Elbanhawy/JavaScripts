@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Slider in JS</title>
+		<style type="text/css">
+
+		#macScreen{
+			position: absolute;;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			background: url(https://img.freepik.com/free-vector/green-banner-with-diagonal-stripes-pattern_1017-28370.jpg?size=626&ext=jpg);
+			width: 799px;
+			height: 609px;
+		}
+
+		#imageContainer{
+			width: 410px;
+			height: 720px;
+			margin: 28px 0px 0px 40px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="macScreen">
+			<div id="imageContainer">
+			</div>
+		</div>
+		<script type="text/javascript">
+
+		var imageContainer = document.getElementById('imageContainer');
+		var images = ['free-photo/green-slate_1205-377.jpg?size=626&ext=jpg', 'free-vector/white-green-grunge-texture-background_1409-1602.jpg?size=626&ext=jpg', 'free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149018550.jpg?size=626&ext=jpg'];
+		var totalPics = images.length;
+		var currentImage = 0;
+
+		function changeImage() {
+			var imageSource = "https://img.freepik.com/" + images[currentImage];
+			currentImage = currentImage + 1 == totalPics ? 0 : currentImage + 1;
+			imageContainer.innerHTML = '<img src="' + imageSource + '" width="720" height="410" />';
+			setTimeout(changeImage, 3000);
+			// alert(imageSource);
+		}
+
+		changeImage();
+
+		</script>
+	</body>
+</html>
