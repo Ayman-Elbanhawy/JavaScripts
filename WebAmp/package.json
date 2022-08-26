@@ -1,0 +1,30 @@
+{
+  "name": "webamp-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext ts,tsx,js,jsx --rulesdir=packages/webamp-modern/tools/eslint-rules",
+    "deploy": "sh deploy.sh",
+    "format": "prettier --write '**/*.{js,ts,tsx}'"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.3.2"
+  },
+  "prettier": {
+    "trailingComma": "es5"
+  },
+  "jest": {
+    "projects": [
+      "config/jest.*.js"
+    ]
+  }
+}
