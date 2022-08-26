@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Animated ThoughtBot Logo</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <ul class="links">
+    <li><a href="https://github.com/TalkativeTree/AnimatedLogos/tree/master/AnimatedThoughtBotLogo" >Github</a></li>
+    <!-- <li><a href="personal_site">My personal_site</a></li> -->
+  </ul>
+
+  <section class="murderous-robot">
+    <section class="buttons">
+      <div class="btn btn-broadcast"><p>broadcast</p></div>
+      <div class="btn btn-wave"><p>wave</p></div>
+      <div class="btn btn-chase"><p>dance</p></div>
+
+    </section>
+    <div class="robot">
+      <div class="background-circle"></div>
+    <!-- layer 0 has the thought waves coming from the head -->
+      <section class="layer waves">
+        <div class="little radio-wave"></div>
+        <div class="medium radio-wave"></div>
+        <div class="big radio-wave"></div>
+        <div class="left-triangle"></div>
+        <div class="right-triangle"></div>
+      </section>
+
+      <!-- layer 1 should have the head, shoulders, and torso -->
+      <section class="layer body">
+        <div class="head"></div>
+        <div class="shoulders"></div>
+        <div class="torso"></div>
+      </section>
+
+      <!-- layer 2 should have all the moving parts: eyes, legs, arms -->
+      <section class="layer">
+        <div class="eyes">
+          <div class="eye left-eye"></div>
+          <div class="eye right-eye"></div>
+        </div>
+        <div class="right-leg leg-bone rotate-right">
+          <div class="foot-border"></div>
+          <div class="foot"></div>
+          <div class="leg-border"></div>
+          <div class="leg"></div>
+          <div class="hip-joint"></div>
+        </div>
+        <div class="left-leg leg-bone rotate-left">
+          <div class="foot-border"></div>
+          <div class="foot"></div>
+          <div class="leg-border"></div>
+          <div class="leg"></div>
+          <div class="hip-joint"></div>
+        </div>
+        <div class="left-arm arm">
+            <div class="hand-border"></div>
+            <div class="hand"></div>
+            <div class="forearm"></div>
+            <div class="joint"></div>
+        </div>
+        <div class="right-arm arm">
+            <div class="hand-border"></div>
+            <div class="hand"></div>
+            <div class="forearm"></div>
+            <div class="joint"></div>
+        </div>
+      </section>
+    </div>
+    <div class="robot-message hide"> All Done Robot Animation Test </div>
+  </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
